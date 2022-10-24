@@ -1,0 +1,8 @@
+Instructions on how to run westpa2:
+
+First enter bash (bash-4.4$ ....)
+Then enter the westpa-2.0 environment
+	conda activate westpa-2.0
+	make sure that your conda plugins are up to date (conda update mdanalysi)
+
+

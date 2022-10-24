@@ -1,0 +1,56 @@
+Updating system with the options from the configuration file
+Maximum wallclock time: 3 days, 0:00:00
+
+Thu Sep 29 12:19:01 2022
+Iteration 1 (150 requested)
+Beginning iteration 1
+2 segments remain in iteration 1 (2 total)
+1 of 41 (2.439024%) active bins are populated
+per-bin minimum non-zero probability:       1
+per-bin maximum probability:                1
+per-bin probability dynamic range (kT):     0
+per-segment minimum non-zero probability:   0.4
+per-segment maximum non-zero probability:   0.6
+per-segment probability dynamic range (kT): 0.405465
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+Iteration completed successfully
+Iteration wallclock: 0:03:32.121546, cputime: 0:13:39.687471
+
+
+Thu Sep 29 12:22:33 2022
+Iteration 2 (150 requested)
+Beginning iteration 2
+2 segments remain in iteration 2 (2 total)
+1 of 41 (2.439024%) active bins are populated
+per-bin minimum non-zero probability:       1
+per-bin maximum probability:                1
+per-bin probability dynamic range (kT):     0
+per-segment minimum non-zero probability:   0.4
+per-segment maximum non-zero probability:   0.6
+per-segment probability dynamic range (kT): 0.405465
+norm = 1, error in norm = 0 (0*epsilon)
+MAB binning in use
+Bottleneck bin occupancy may not be accurately reported
+Waiting for segments to complete...
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmp9hoel9k_': ValueError('cannot reshape array of size 0 into shape (50,1)')
+-- ERROR    [westpa.core.propagators.executable] -- could not read pcoord from '/tmp/tmptm614fta': ValueError('cannot reshape array of size 0 into shape (50,1)')
+-- ERROR    [westpa.core.sim_manager] -- propagation failed for 2 segment(s):
+0  
+1
+exception caught; shutting down
+-- ERROR    [w_run] -- error message: propagation failed for 2 segments
+-- ERROR    [w_run] -- Traceback (most recent call last):
+  File "/Projects/arango/anaconda3/envs/westpa2/lib/python3.10/site-packages/westpa/cli/core/w_run.py", line 62, in run_simulation
+    sim_manager.run()
+  File "/Projects/arango/anaconda3/envs/westpa2/lib/python3.10/site-packages/westpa/core/sim_manager.py", line 752, in run
+    self.check_propagation()
+  File "/Projects/arango/anaconda3/envs/westpa2/lib/python3.10/site-packages/westpa/core/sim_manager.py", line 650, in check_propagation
+    raise PropagationError('propagation failed for {:d} segments'.format(len(failed_segments)))
+westpa.core.sim_manager.PropagationError: propagation failed for 2 segments
+
+Exception in thread receiver:
+Traceback (most recent call last):
+  File "/Projects/arango/anaconda3/envs/westpa2/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
